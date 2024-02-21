@@ -149,7 +149,7 @@
 		}
 
 		if(self.URL){ // simple fast and modern way using Blob and URL:
-			saver(self.URL.createObjectURL(blob), true);
+			saver(self.URL.createObjectURL(blob), false);
 		}else{
 			// handle non-Blob()+non-URL browsers:
 			if(typeof blob === "string" || blob.constructor===toString ){
